@@ -1,44 +1,3 @@
-// -----ヘッダー-----
-let lastScrollTop = 0; // 最後のスクロール位置を保持
-
-window.addEventListener('scroll', function() {
-  const scrollButtons = document.querySelector('.scroll-buttons');
-  const scrollPosition = window.scrollY; // 現在のスクロール位置
-
-  // スクロールが上方向に行われているかを判定
-  if (scrollPosition < lastScrollTop && window.innerWidth <= 768) {
-    // 上にスクロールしている場合にボタンを表示
-    scrollButtons.classList.add('visible');
-    scrollButtons.classList.remove('hidden'); // 非表示用クラスを削除
-  } else {
-    // 下にスクロールしている場合にボタンを非表示にする
-    scrollButtons.classList.add('hidden'); // 非表示用クラスを追加
-    setTimeout(function() {
-      scrollButtons.classList.remove('visible'); // 非表示のアニメーションが終わった後にvisibleクラスを削除
-    }, 500); // アニメーションの時間と一致させる
-  }
-
-  // 現在のスクロール位置を次回の比較用に保存
-  lastScrollTop = scrollPosition <= 0 ? 0 : scrollPosition; // ページの最上部ではlastScrollTopを0にリセット
-});
-
-// ウィンドウサイズが変更されたときにボタン表示をリセット
-window.addEventListener('resize', function() {
-  const scrollButtons = document.querySelector('.scroll-buttons');
-
-  // 768pxを超えた場合、スクロールボタンを非表示にする
-  if (window.innerWidth > 768) {
-    // 非表示にする際にアニメーションを適用する
-    scrollButtons.style.transition = 'none'; // 一時的にアニメーションを無効化
-    scrollButtons.classList.add('hidden'); // 非表示用クラスを追加
-    scrollButtons.classList.remove('visible');
-    // アニメーション後にスタイルを元に戻す
-    setTimeout(function() {
-      scrollButtons.style.transition = 'transform 0.5s ease, opacity 0.5s ease, height 0.5s ease';
-    }, 500); // 500ms後にアニメーションを有効に戻す
-  }
-});
-
 // -----popup-----
 let currentIndex = 0;
 
@@ -144,6 +103,10 @@ function toggleNavigationButtons() {
               popup.style.opacity = "1";
           }, 10);
 
+          // ポップアップのスクロール位置を最上部に戻す
+          const popupContent = document.querySelector(".second-popup-content");
+          popupContent.scrollTop = 0;
+
           // ボタンの表示制御を更新
           this.updateButtonVisibility();
       },
@@ -165,6 +128,10 @@ function toggleNavigationButtons() {
           // クラスを更新
           this.updatePopupStyle();
 
+          // ポップアップのスクロール位置を最上部に戻す
+          const popupContent = document.querySelector(".second-popup-content");
+          popupContent.scrollTop = 0;
+
           // ボタンの表示制御を更新
           this.updateButtonVisibility();
       },
@@ -175,6 +142,10 @@ function toggleNavigationButtons() {
 
           // クラスを更新
           this.updatePopupStyle();
+
+          // ポップアップのスクロール位置を最上部に戻す
+          const popupContent = document.querySelector(".second-popup-content");
+          popupContent.scrollTop = 0;
 
           // ボタンの表示制御を更新
           this.updateButtonVisibility();
@@ -247,5 +218,15 @@ $(function() {
   $('.accordion_header-9').click(function() {
     $(this).prev('.accordion_inner-9').slideToggle(); // 直前の要素を選択して開閉
     $(this).toggleClass("open");
+    $(this).hide(); // クリック後に自分自身を非表示にする
   });
+});
+
+// scroll hint TOP
+new ScrollHint('.js-scrollable', {
+  remainingTime: 5000,
+  suggestiveShadow: true, //スクロール可能な要素右端に影を付ける
+  i18n: {
+    scrollable: 'スクロールできます' //表示するテキスト
+  }
 });

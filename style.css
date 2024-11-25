@@ -27,6 +27,7 @@ body {
   color: #222;
   font-weight: 400;
   line-height: 1.25;
+  letter-spacing: 0.05em;
 }
 
 header, footer, nav, menu, article, aside, section, details, figcaption, figure{
@@ -41,10 +42,6 @@ a img {
   border: none;
 }
 
-strong {
-  font-weight: 700;
-}
-
 ul, ol {
   list-style: none;
 }
@@ -55,10 +52,6 @@ a img {
 
 a{
   text-decoration: none;
-}
-
-strong {
-  font-weight: 700;
 }
 
 img{
@@ -73,22 +66,22 @@ h1{
 
 h2{
     font-size: 2.8rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h3{
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h4{
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h5{
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h6{
@@ -166,7 +159,7 @@ h6{
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 12px;
+  height: 9px;
   background-color: var(--cv-color);
   opacity: 1;
   z-index: -1;
@@ -175,7 +168,7 @@ h6{
 .point-ttl p{
   color: var(--white-color);
   background-color: var(--main-color);
-  font-weight: 700;
+  font-weight: 600;
   display: inline-block;
   padding: 0.5rem 2rem;
   border-radius: 4px;
@@ -206,7 +199,7 @@ h6{
 
 .common-link .title{
   color: var(--white-color);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .common-link .custom-button {
@@ -214,7 +207,7 @@ h6{
   margin: 3.2rem auto;
   padding: 20px 0;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 33px;
   cursor: pointer;
   border: none;
@@ -235,7 +228,7 @@ h6{
   gap: 2rem;
   justify-content: center;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--white-color);
 }
 
@@ -294,7 +287,7 @@ h6{
   background-color: var(--cv-color-2);
   color: var(--main-color);
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 600;
   position: relative;
   z-index: 1;
   text-align: center;
@@ -316,6 +309,12 @@ h6{
   padding-top: 10px;
   text-align: center;
   z-index: -1;
+}
+
+.area-1 .point .box span img{
+  width: auto;
+  height: 16px;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
@@ -381,11 +380,11 @@ h6{
 
 .area-2 .right .box{
   width: 120px;
-  padding: 1rem 0 0;
+  padding: 1.6rem 0 0;
   background-color: var(--white-color);
   border-radius: 8px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .area-2 .right .box span{
@@ -507,7 +506,7 @@ h6{
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 16px;
+  height: 11px;
   background-color: var(--cv-color);
   opacity: 1;
   z-index: -1;
@@ -525,7 +524,7 @@ h6{
   border-radius: 0 0 8px 8px;
   padding: 0.7rem 0 1rem;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .area-3 .arrow-round {
@@ -600,7 +599,7 @@ h6{
 
 .area-4 .merit p{
   color: var(--main-color);
-  font-weight: 700;
+  font-weight: 600;
   padding-bottom: 1rem;
 }
 
@@ -629,7 +628,7 @@ h6{
 
 .area-4 .text {
   color: var(--main-color);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .area-4 .custom-button {
@@ -637,7 +636,7 @@ h6{
   margin: 3.2rem auto 0;
   padding: 20px 0;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 33px;
   cursor: pointer;
   border: none;
@@ -704,7 +703,7 @@ h6{
   opacity: 0.7;
   display: block;
   text-align: left;
-  font-weight: 700;
+  font-weight: 600;
   padding-bottom: 1rem;
 }
 
@@ -724,7 +723,7 @@ h6{
 
 .type .green .right h6{
   color: var(--main-color);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .type .green .right .price-15{
@@ -757,7 +756,7 @@ h6{
   background-color: var(--bg-color);
   color: var(--main-color);
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 20px;
   text-align: center;
   cursor: pointer;
@@ -801,15 +800,15 @@ h6{
 .popup .close {
   position: absolute;
   width: 100px;
-  height: 30px;
-  left: 50%; /* 横方向中央 */
-  transform: translateX(-50%); /* 完全に中央にする */
+  height: 25px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 8px;
   color: white;
   border: none;
   font-size: 18px;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   text-align: center;
 }
 
@@ -868,7 +867,7 @@ h6{
   opacity: 0.7;
   display: block;
   text-align: left;
-  font-weight: 700;
+  font-weight: 600;
   padding-bottom: 1rem;
 }
 
@@ -888,13 +887,14 @@ h6{
 
 .popup-text .green .right h6{
   color: var(--main-color);
-  font-weight: 700;
-  padding-bottom: 2rem;
+  font-weight: 600;
+  padding-bottom: 1.6rem;
 }
 
 .popup-text .green .right h6 span{
   font-size: 1.2rem;
   color: #222;
+  font-weight: 400;
 }
 
 .popup-text .gray{
@@ -909,6 +909,11 @@ h6{
 
 .popup-text .gray span{
   font-weight: bold;
+}
+
+.popup-text .gray .small{
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .popup-text .container{
@@ -949,7 +954,7 @@ h6{
 .area-4 .pop-4 th{
   background-color: var(--main-color);
   color: var(--white-color);
-  font-weight: 700;
+  font-weight: 600;
   padding: 0.6rem;
 }
 
@@ -1084,7 +1089,7 @@ h6{
     font-size: 2rem;
     background-color: var(--main-color);
     color: var(--white-color);
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 auto;
     border-radius: 33px;
     padding: 20px 0;
@@ -1127,7 +1132,7 @@ h6{
 
 .area-5 .green {
   color: var(--white-color);
-  font-weight: 700;
+  font-weight: 600;
   background-color: #80B2AC;
   padding: 1.6rem 0;
   border-radius: 5px 5px 0 0;
@@ -1151,12 +1156,21 @@ h6{
 .area-5 .a-txt span{
   font-size: 1.8rem;
   color: var(--main-color);
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.area-5 .a-txt .small{
+  font-size: 1.2rem;
+  color: var(--gray-color-4);
+}
+
+.area-5 .a-txt .small-note-txt{
+  font-size: 1rem;
 }
 
 .area-5 .b-txt{
   padding-bottom: 2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .area-5 .b-txt .large{
@@ -1188,7 +1202,7 @@ h6{
 }
 
 .area-5 .c-txt.wh{
-  background-color: var(--white-color)!important;
+  background-color: transparent!important;
   color: #4E948B!important;
   border: 2px solid #4E948B;
 }
@@ -1204,7 +1218,7 @@ h6{
   z-index: 1;
   line-height: 1.5;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0.8rem 0 0;
 }
 
@@ -1222,7 +1236,7 @@ h6{
 
 .area-5 .e-txt{
   padding: 1.6rem 0;
-  font-weight: 700;
+  font-weight: 600;
   width: 95%;
   margin: 0 auto;
   border-bottom: dashed 1.5px #B2D1CD;
@@ -1234,6 +1248,15 @@ h6{
 
 .area-5 .e-txt.third{
   border-bottom: dashed 1.5px #00665A;
+}
+
+.area-5 .note-container.third{
+  border-bottom: dashed 1.5px #00665A;
+  width: 90%;
+}
+
+.area-5 .bg-3 .note-container{
+  padding-bottom: 1rem;
 }
 
 .area-5 .e-txt .large{
@@ -1286,13 +1309,26 @@ h6{
 
 .area-5 .second-item {
   background-color: var(--white-color);
-  color: var(--main-color);
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 20px;
   text-align: center;
   cursor: pointer;
   border-radius: 0 0 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.area-5 .second-item span{
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+}
+
+.area-5 .second-item span img{
+  width: 22px;
+  height: 22px;
 }
 
 .area-5 .price-container{
@@ -1303,7 +1339,7 @@ h6{
 .area-5 .price-container .ttl{
   position: relative;
   padding-left: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 1.2rem;
   text-align: left;
   margin-top: 4rem;
@@ -1311,7 +1347,7 @@ h6{
 
 .area-5 .price-container .ttl-s{
   text-align: left;
-  font-weight: 700;
+  font-weight: 600;
   padding: 1.5rem 0 1rem;
 }
 
@@ -1331,6 +1367,7 @@ h6{
   border-bottom: 1px solid #B2D1CD;
   padding-bottom: 1rem;
   padding-top: 1rem;
+  align-items: flex-end;
 }
 
 .area-5 .price-container .flex.line-c{
@@ -1342,7 +1379,7 @@ h6{
 }
 
 .area-5 .price-container .flex .txt p{
-  font-weight: 700;
+  font-weight: 600;
   padding-bottom: 1rem;
 }
 
@@ -1364,7 +1401,7 @@ h6{
 }
 
 .area-5 .price-container .flex .price h6{
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .area-5 .price-container .flex .price span{
@@ -1405,7 +1442,7 @@ h6{
 .area-5 .second-popup .second-close {
   position: absolute;
   width: 100px;
-  height: 30px;
+  height: 25px;
   left: 50%;
   transform: translateX(-50%);
   bottom: 8px;
@@ -1413,7 +1450,7 @@ h6{
   border: none;
   font-size: 18px;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   text-align: center;
 }
 
@@ -1463,7 +1500,7 @@ h6{
   flex: 1;
   padding: 20px 0;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 33px;
   cursor: pointer;
   border: none;
@@ -1502,6 +1539,19 @@ h6{
   width: 100%;
 }
 
+.area-5 .pop-ttl-fix-pd{
+  padding-top: 14rem;
+}
+
+.area-5 .plan-pop-fix{
+  position: fixed;
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--white-color);
+  z-index: 11;
+  border-radius: 8px 8px 0 0;
+}
+
 .area-5 .btn-pop-1,
 .area-5 .btn-pop-2{
   width: 95%;
@@ -1525,7 +1575,7 @@ h6{
 .area-5 .btn-pop-1 tr th,
 .area-5 .btn-pop-2 tr th{
   color: var(--white-color);
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   padding: 0.6rem;
   background-color: var(--main-color);
@@ -1566,6 +1616,7 @@ h6{
 .area-5 .btn-pop-1 .bg-2-t{
   background-color: #E5F0EE!important;
   color: var(--main-color);
+  border: 1px solid var(--main-color);
 }
 
 .area-5 .btn-pop-1 .bg-2-y{
@@ -1575,7 +1626,7 @@ h6{
 .area-5 .btn-pop-2 tr td{
   background-color: #E5F0EE;
   padding: 0.6rem;
-  font-weight: 700;
+  font-weight: 600;
   text-align: right;
 }
 
@@ -1586,7 +1637,7 @@ h6{
 .area-5 .btn-pop.ttl{
   position: relative;
   padding-left: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 1.2rem;
   text-align: left;
   margin-top: 4rem;
@@ -1610,6 +1661,7 @@ h6{
 
 .area-5 .btn-pop-2 .s-tr span{
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .area-5 .btn-pop-2 .s-td{
@@ -1640,7 +1692,7 @@ h6{
 }
 
 .area-5 .note-container .text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--gray-color-4);
   font-weight: 400;
 }
@@ -1727,6 +1779,7 @@ h6{
 
 .area-5 .second-popup-text{
   overflow-x: auto;
+  position: relative;
 }
 
 .area-5 .table-container{
@@ -1737,6 +1790,10 @@ h6{
 
   .sp-90 .second-popup-content {
     width: 90%; /* openPopup(3) または openPopup(4) の場合のみ適用 */
+  }
+
+  .area-5 .plan-pop-fix{
+    width: 90%;
   }
 }
 
@@ -1782,7 +1839,7 @@ h6{
   background-color: var(--bg-color);
   color: var(--main-color);
   padding: 1.6rem;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 8px;
 }
 
@@ -1807,7 +1864,7 @@ h6{
   margin: 4rem auto 0;
   padding: 20px 0;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 33px;
   cursor: pointer;
   border: none;
@@ -1826,7 +1883,7 @@ h6{
 .area-6 .application .link,
 .area-7 .application .link{
   color: var(--main-color);
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 2rem;
 }
 
@@ -1851,7 +1908,7 @@ h6{
   border: none;
   border-radius: 33px;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid var(--main-color);
   margin: 0 auto;
@@ -1898,17 +1955,23 @@ h6{
 @media (max-width: 475px) {
   .area-6 .application .container{
     flex-wrap: nowrap;
-    overflow-x: scroll;
-    position: absolute;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: absolute !important;
     top: 145px;
+    left: -5%;
+    padding-left: 10%;
     margin: 0 auto;
   }
 
   .area-7 .application .container {
     flex-wrap: nowrap;
-    overflow-x: scroll;
-    position: absolute;
-    top: 185px;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: absolute !important;
+    top: 210px;
+    left: -5%;
+    padding-left: 10%;
     margin: 0 auto;
   }
 
@@ -2026,7 +2089,7 @@ h6{
   position: relative;
   z-index: 1;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 600;
   margin: 3rem 0 1.5rem;
 }
 
@@ -2081,12 +2144,12 @@ h6{
   justify-content: center;
   align-items: center;
   color: var(--main-color);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .area-8 .repeat .box .bg .txt h6{
   color: var(--main-color);
-  font-weight: 700;
+  font-weight: 600;
   padding-bottom: 1rem;
   padding-top: 0;
 }
@@ -2121,7 +2184,7 @@ h6{
   margin: 2rem auto 0;
   padding: 20px 0;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 33px;
   cursor: pointer;
   border: none;
@@ -2212,7 +2275,7 @@ h6{
 .area-9 .container .box p{
   position: relative;
   padding-left: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
 
@@ -2243,7 +2306,7 @@ h6{
 }
 
 .area-9 .speech-bubble img {
-  width: 100px;
+  width: 74px;
   height: auto;
   margin-right: 15px;
 }
@@ -2303,7 +2366,7 @@ h6{
 }
 
 .area-10 .accordion_one {
-  max-width: 1100px;
+  max-width: 780px;
   width: 100%;
   margin: 0 auto 2rem;
 }
@@ -2311,7 +2374,7 @@ h6{
 .area-10 .accordion_one .accordion_header {
   background-color: var(--white-color);
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 2rem 6rem 2rem 2rem;
   border-radius: 8px;
   position: relative;
@@ -2397,7 +2460,7 @@ h6{
   margin: 4rem auto 0;
   padding: 2rem 0;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 33px;
   background-color: var(--white-color);
   cursor: pointer;
@@ -2454,6 +2517,7 @@ h6{
 
 .area-11 .call .left{
   color: var(--white-color);
+  text-align: center;
 }
 
 .area-11 .call .right{
@@ -2469,7 +2533,7 @@ h6{
   justify-content: center;
   align-items: center;
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 .area-11 .call .right .icon-text img {
   margin-right: 10px;
@@ -2489,7 +2553,7 @@ h6{
 }
 
 .area-11 .call .right h6{
-  font-weight: 700;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   margin-bottom: 0.5rem;
@@ -2524,7 +2588,7 @@ h6{
   background-color: var(--white-color);
   color: var(--main-color);
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 2rem;
   text-align: center;
   border-radius: 33px;
@@ -2580,7 +2644,7 @@ h6{
   border: 1px solid var(--main-color);
   color: var(--main-color);
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   padding: 2rem 0;
   border-radius: 33px;
   font-size: 2rem;
@@ -2631,7 +2695,7 @@ h6{
 .area-13 .btn-2-container .box{
   border: 1px solid var(--main-color);
   color: var(--main-color);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2rem;
   text-align: center;
   padding: 2rem 0;
