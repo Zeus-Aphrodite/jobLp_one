@@ -283,7 +283,7 @@ h6{
 }
 
 .area-1 .point .box{
-  width: 190px;
+  width: 196px;
   background-color: var(--cv-color-2);
   color: var(--main-color);
   font-size: 1.6rem;
@@ -380,7 +380,7 @@ h6{
 
 .area-2 .right .box{
   width: 120px;
-  padding: 1.6rem 0 0;
+  padding: 1.6rem 0 0.8rem;
   background-color: var(--white-color);
   border-radius: 8px;
   text-align: center;
@@ -766,8 +766,12 @@ h6{
   width: 100%;
 }
 
+.popup-cl-position{
+  position: relative;
+}
+
 .popup {
-  display: none; /* 初期状態で非表示 */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -776,8 +780,8 @@ h6{
   background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
-  opacity: 0; /* 初期状態で透明 */
-  transition: opacity 0.6s ease; /* フェードエフェクト */
+  opacity: 0;
+  transition: opacity 0.6s ease;
   z-index: 9999;
   overflow: auto;
 }
@@ -799,17 +803,15 @@ h6{
 
 .popup .close {
   position: absolute;
-  width: 100px;
-  height: 25px;
-  left: 50%;
-  transform: translateX(-50%);
   bottom: 8px;
-  color: white;
-  border: none;
-  font-size: 18px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  right: 10px;  /* 右側に配置 */
+  font-size: 20px;
+  color: #fff;
   cursor: pointer;
-  display: block;
-  text-align: center;
+  z-index: 1001;
+  width: 100px;
 }
 
 .popup .prev {
@@ -817,6 +819,8 @@ h6{
   left: 50%;
   transform: translate(-50%, -50%) translate(-280px, 0);
   background-color: transparent;
+  width: 14px;
+  height: 24px;
 }
 
 .popup .next {
@@ -824,6 +828,8 @@ h6{
   right: 49%;
   transform: translate(-50%, -50%) translate(280px, 0);
   background-color: transparent;
+  width: 14px;
+  height: 24px;
 }
 
 .popup-content {
@@ -840,6 +846,10 @@ h6{
 
 .popup-content::-webkit-scrollbar {
   display: none;
+}
+
+.popup .popup-text {
+  position: relative;
 }
 
 .popup-text .green{
@@ -1099,6 +1109,16 @@ h6{
     margin-bottom: 3.2rem;
   }
 
+}
+
+@media (max-height: 450px) {
+.popup-content {
+  max-height: 60vh;
+}
+
+.popup .close {
+  font-size: 15px;
+}
 }
 
 /* area-5 */
@@ -1459,12 +1479,16 @@ h6{
   left: 50%;
   transform: translate(-50%, -50%) translate(-280px, 0);
   background-color: transparent;
+  width: 14px;
+  height: 24px;
 }
 
 .area-5 .second-popup .second-next {
   top: 50%;
   right: 49%;
   transform: translate(-50%, -50%) translate(280px, 0);  background-color: transparent;
+  width: 14px;
+  height: 24px;
 }
 
 .area-5 .second-popup-content {
@@ -2194,6 +2218,11 @@ h6{
   color: var(--main-color);
   border: 1px solid var(--main-color);
   display: block;
+  transition: 0.5s;
+}
+
+.area-8 .custom-button:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 770px) {
@@ -2622,50 +2651,6 @@ h6{
   }
 }
 
-/* area 12 */
-.area-12{
-  background-color: var(--bg-color);
-  padding: 6.4rem 2.5%;
-  text-align: center;
-}
-
-.area-12 .btn-4-container{
-  margin: 4rem auto 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1.5rem;
-  width: 100%;
-  max-width: 700px;
-}
-
-.area-12 .btn-4-container .box{
-  background-color: var(--white-color);
-  border: 1px solid var(--main-color);
-  color: var(--main-color);
-  text-align: center;
-  font-weight: 600;
-  padding: 2rem 0;
-  border-radius: 33px;
-  font-size: 2rem;
-  transition: 0.5s;
-}
-
-.area-12 .btn-4-container .box:hover{
-  opacity: 0.6;
-}
-
-@media (max-width: 768px) {
-  .area-12 {
-    padding: 4.8rem 5%;
-  }
-
-  .area-12 .btn-4-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-  }
-}
-
 /* area 13 */
 .area-13{
   width: 100%;
@@ -2684,23 +2669,60 @@ h6{
   margin: 0 auto 4.8rem;
 }
 
+.area-13 .btn-tlt{
+  width: 100%;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  text-align: left;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-weight: 500;
+  margin: 0 auto 2.4rem;
+}
+
 .area-13 .btn-2-container{
   display: flex;
   justify-content: center;
   gap: 2rem;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 4.8rem;
 }
 
 .area-13 .btn-2-container .box{
   border: 1px solid var(--main-color);
   color: var(--main-color);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2rem;
   text-align: center;
-  padding: 2rem 0;
+  padding: 1.2rem 0;
   flex: 1;
   border-radius: 33px;
+  transition: 0.5s;
+}
+
+.area-13 .btn-2-container .box:hover{
+  opacity: 0.7;
+}
+
+.area-13 .btn-2-container .box.btn-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.area-13 .btn-2-container .box.btn-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  width: auto;
+  padding: 2rem;
+}
+
+.area-13 .btn-2-container .box span{
+  font-size: 1.2rem;
+  display: block;
 }
 
 @media (max-width: 770px) {
@@ -2724,6 +2746,14 @@ h6{
     flex-direction: column;
     width: 90%;
   }
+
+  .area-13 .btn-2-container .box.btn-1{
+    padding: 1.8rem 0;
+  }
+
+  .area-13 .btn-tlt {
+    width: 90%;
+}
 }
 
 /* footer */
