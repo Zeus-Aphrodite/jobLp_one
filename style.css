@@ -807,17 +807,37 @@ h6{
 
 .popup .close {
   position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 34.5%;
+    left: 49.5%;
+  transform: translate(0%, 0%) translate(250px, 0);
+  /* transform: translate(-50%, -50%); */
   right: 10px;  /* 右側に配置 */
   font-size: 20px;
-  color: #fff;
+  color: #000;
   cursor: pointer;
   z-index: 1001;
-  width: 100px;
+  width: 30px;
+  height: 30px;
+}
+@media (max-width: 1440px) {
+  .popup .close {
+    top: 30.5% !important;
+    left: 49.5%;
+  }
+}
+@media (max-width: 2560px) {
+  .popup .close {
+    top: 39.5%;
+    left: 49.5%;
+  }
 }
 
+@media (max-width: 2560px) {
+  .popup .close {
+    top: 39.5%;
+    left: 49.5%;
+  }
+}
 .popup .prev {
   top: 50%;
   left: 50%;
@@ -2803,4 +2823,25 @@ footer{
   background-color: var(--main-color);
   color: var(--white-color);
   padding: 0 2rem 1rem;
+}
+
+
+
+.new_close{
+  position: absolute;
+  top: -35px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
+ background: white;
+ border-radius: 50%;
+ border: 1px solid #000 !important;
+ color: #000;
+ cursor: pointer;
+}
+
+.popup-content{
+  overflow: visible;
 }
