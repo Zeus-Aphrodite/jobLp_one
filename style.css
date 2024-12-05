@@ -2837,8 +2837,7 @@ footer{
   text-align: center;
  background: white;
  border-radius: 50%;
- border: 1px solid #000 !important;
- color: #000;
+ border: 2px solid #DCDCDC !important;
  cursor: pointer;
 }
 
@@ -2865,8 +2864,7 @@ footer{
   text-align: center;
  background: white;
  border-radius: 50%;
- border: 1px solid #000 !important;
- color: #000;
+     color: #222;
  cursor: pointer;
  z-index: 999;
 }
@@ -2880,8 +2878,9 @@ footer{
   text-align: center;
  background: white;
  border-radius: 50%;
- border: 1px solid #000 !important;
- color: #000;
+ border: 2px solid #DCDCDC !important;
+ color: #222;
+ font-weight: 700;
  cursor: pointer;
  z-index: 999;
 }
@@ -2895,8 +2894,7 @@ footer{
   text-align: center;
  background: white;
  border-radius: 50%;
- border: 1px solid #000 !important;
- color: #000;
+     font-weight: 700;
  cursor: pointer;
  z-index: 999;
 }
