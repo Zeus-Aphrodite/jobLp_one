@@ -2845,3 +2845,54 @@ footer{
 .popup-content{
   overflow: visible;
 }
+
+.plan-pop-fix-new{
+  position: fixed;
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--white-color);
+  z-index: 11;
+  border-radius: 8px 8px 0 0;
+}
+
+.new_close_new{
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
+ background: white;
+ border-radius: 50%;
+ border: 1px solid #000 !important;
+ color: #000;
+ cursor: pointer;
+ z-index: 999;
+}
+.new_close_two{
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
+ background: white;
+ border-radius: 50%;
+ border: 1px solid #000 !important;
+ color: #000;
+ cursor: pointer;
+ z-index: 999;
+}
+@media (max-width: 768px) {
+  .plan-pop-fix-new{
+    width: 90%;
+  } 
+  .new_close_new{
+    right: 20px;
+  }
+  .new_close_two{
+    right: -10px;
+  }
+}

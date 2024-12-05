@@ -406,13 +406,13 @@
                         <p>対人賠償保険</p>
                         <h6><span>保険金額は</span> 無制限</h6>
                     </div>
-                <div class="new_close" onclick="closePopup(event)">&times;</div>
+                    <div class="new_close" onclick="closePopup(event)">&times;</div>
 
                 </div>
                 <h6 class="gray">
                     記名被保険者または指定被保険者が借用自動車（借りた車）を運転中の事故により他人を死傷させ、法律上の損害賠償責任を負った場合に、損害賠償額について、対人賠償保険金をお支払いします。なお、自賠責保険等により支払われる金額を超える部分に限ります。<span>保険金額は「無制限」</span>です。
                 </h6>
-                
+
 
             </div>
             <div class="popup-item" id="item1">
@@ -424,7 +424,7 @@
                         <h5>他人のモノを壊してしまったときに備える</h5>
                         <p>対物賠償保険</p>
                         <h6><span>保険金額は</span> 無制限</h6>
-                        
+
                     </div>
                     <div class="new_close" onclick="closePopup(event)">&times;</div>
                 </div>
@@ -710,7 +710,7 @@
         </div>
 
         <div class="second-popup" id="second-popup" onclick="SecondNamespace.closePopup(event)">
-            <div class="second-close" onclick="SecondNamespace.closePopup(event)">&times; 閉じる</div>
+            <!-- <div class="second-close" onclick="SecondNamespace.closePopup(event)">&times; 閉じる</div> -->
             <button class="second-nav second-next" onclick="SecondNamespace.nextPopup(); event.stopPropagation()"><img
                     src="img/arrow_popup_2.png" alt="Next" width="12" height="24"></button>
             <button class="second-nav second-prev" onclick="SecondNamespace.prevPopup(); event.stopPropagation()"><img
@@ -722,7 +722,10 @@
 
         <div id="second-content" style="display: none;">
             <div class="second-popup-item" id="second-item0">
-                <h3 class="green pop-fix">エコノミー</h3>
+                <div class="plan-pop-fix">
+                    <div class="new_close_new" onclick="SecondNamespace.closePopup(event)">&times;</div>
+                    <h3 class="green pop-fix">エコノミー</h3>
+                </div>
                 <p class="a-txt pop-margin">ご登録後<span>すぐに乗れる！</span></p>
                 <h5 class="b-txt"><span class="large e-font">800</span><span class="middle"> 円</span> / 24時間</h5>
                 <p class="c-txt wh">対物事故時の <span>自己負担額あり</span></p>
@@ -888,7 +891,11 @@
             </div>
             <div class="second-popup-item second" id="second-item1">
                 <div class="bg-2">
-                    <h3 class="green second pop-fix">スタンダード</h3>
+                    <div class="plan-pop-fix">
+                        <div class="new_close_new" onclick="SecondNamespace.closePopup(event)">&times;</div>
+                        <h3 class="green second pop-fix">スタンダード</h3>
+                    </div>
+
                     <p class="a-txt pop-margin">ご登録後<span>すぐに乗れる！</span></p>
                     <h5 class="b-txt"><span class="large e-font">1,000</span><span class="middle"> 円</span> / 24時間</h5>
                     <p class="c-txt">対物事故時の <span>自己負担額なし</span></p>
@@ -1065,7 +1072,11 @@
             </div>
             <div class="second-popup-item third" id="second-item2">
                 <div class="bg-3">
-                    <h3 class="green third pop-fix">プレミアム</h3>
+                    <div class="plan-pop-fix">
+                        <div class="new_close_new" onclick="SecondNamespace.closePopup(event)">&times;</div>
+                        <h3 class="green third pop-fix">プレミアム</h3>
+
+                    </div>
                     <p class="a-txt pop-margin">ご登録後<span>8日目から乗れる！</span><span class="small">※</span></p>
                     <h5 class="b-txt"><span class="large e-font">2,500</span><span class="middle"> 円</span> / 24時間</h5>
                     <p class="c-txt">対物事故時の <span>自己負担額あり</span></p>
@@ -1242,7 +1253,10 @@
                 </div>
             </div>
             <div class="second-popup-item" id="second-item3">
+
                 <div class="plan-pop-fix">
+                    <div class="new_close_new" onclick="SecondNamespace.closePopup(event)">&times;</div>
+
                     <h3 class="pop-ttl-fix">プランの比較</h3>
                     <table class="btn-pop-1 pop-top-m">
                         <tr>
@@ -1437,7 +1451,11 @@
                 </table>
             </div>
             <div class="second-popup-item" id="second-item4">
-                <h3 class="pop-ttl-fix">2人以上で乗る場合の保険料</h3>
+
+                <div class="plan-pop-fix-new">
+                    <div class="new_close_two" onclick="SecondNamespace.closePopup(event)">&times;</div>
+                    <h3 class="pop-ttl-fix">2人以上で乗る場合の保険料</h3>
+                </div>
                 <div class="table-container">
                     <table class="btn-pop-1 margin sp-width">
                         <tr>
