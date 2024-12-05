@@ -2885,12 +2885,30 @@ footer{
  cursor: pointer;
  z-index: 999;
 }
+.new_close_three{
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
+ background: white;
+ border-radius: 50%;
+ border: 1px solid #000 !important;
+ color: #000;
+ cursor: pointer;
+ z-index: 999;
+}
 @media (max-width: 768px) {
   .plan-pop-fix-new{
     width: 90%;
   } 
   .new_close_new{
     right: 20px;
+  }
+  .new_close_three{
+    right: -15px;
   }
   .new_close_two{
     right: -10px;
