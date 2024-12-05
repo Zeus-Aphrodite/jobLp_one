@@ -2841,6 +2841,11 @@ footer{
  color: #222;
  font-weight: 700;
  cursor: pointer;
+ padding-left: 2px;
+ padding-bottom: 2px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .popup-content{
@@ -2871,6 +2876,11 @@ footer{
  font-weight: 700;
  cursor: pointer;
  z-index: 999;
+ padding-left: 2px;
+ padding-bottom: 2px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 .new_close_two{
   position: absolute;
@@ -2887,6 +2897,11 @@ footer{
  font-weight: 700;
  cursor: pointer;
  z-index: 999;
+ padding-left: 2px;
+ padding-bottom: 2px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 .new_close_three{
   position: absolute;
@@ -2903,6 +2918,11 @@ footer{
  font-weight: 700;
  cursor: pointer;
  z-index: 999;
+ padding-left: 2px;
+ padding-bottom: 2px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 @media (max-width: 768px) {
   .plan-pop-fix-new{
