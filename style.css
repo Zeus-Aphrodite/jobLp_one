@@ -2837,8 +2837,9 @@ footer{
   text-align: center;
  background: white;
  border-radius: 50%;
- border: 1px solid #000 !important;
- color: #000;
+ border: 2px solid #DCDCDC !important;
+ color: #222;
+ font-weight: 700;
  cursor: pointer;
 }
 
