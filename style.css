@@ -2844,8 +2844,8 @@ footer{
  color: #222;
  font-weight: 700;
  cursor: pointer;
- padding-left: 2px;
- padding-bottom: 2px;
+ /* padding-left: 2px;
+ padding-bottom: 2px; */
  display: flex;
  justify-content: center;
  align-items: center;
@@ -2879,8 +2879,8 @@ footer{
  font-weight: 700;
  cursor: pointer;
  z-index: 999;
- padding-left: 2px;
- padding-bottom: 2px;
+ /* padding-left: 2px;
+ padding-bottom: 2px; */
  display: flex;
  justify-content: center;
  align-items: center;
@@ -2900,8 +2900,8 @@ footer{
  font-weight: 700;
  cursor: pointer;
  z-index: 999;
- padding-left: 2px;
- padding-bottom: 2px;
+ /* padding-left: 2px;
+ padding-bottom: 2px; */
  display: flex;
  justify-content: center;
  align-items: center;
@@ -2921,8 +2921,8 @@ footer{
  font-weight: 700;
  cursor: pointer;
  z-index: 999;
- padding-left: 2px;
- padding-bottom: 2px;
+ /* padding-left: 2px;
+ padding-bottom: 2px; */
  display: flex;
  justify-content: center;
  align-items: center;
