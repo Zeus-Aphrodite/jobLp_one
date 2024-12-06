@@ -785,7 +785,7 @@ h6{
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.6s ease;
+  /* transition: opacity 0.6s ease; */
   z-index: 9999;
   overflow: auto;
 }
@@ -1463,7 +1463,7 @@ h6{
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.6s ease;
+  /* transition: opacity 0.6s ease; */
   z-index: 9999;
   overflow: auto;
 }
@@ -2826,6 +2826,9 @@ footer{
 }
 
 
+.popup-content{
+  overflow-y: visible;
+}
 
 .new_close{
   position: absolute;
