@@ -30,6 +30,11 @@ body {
   letter-spacing: normal;
 }
 
+.en-font{
+  font-family: "Arial";
+  font-size: 1.8rem;
+}
+
 header, footer, nav, menu, article, aside, section, details, figcaption, figure{
   display: block;
 }
@@ -82,11 +87,6 @@ h4{
 h5{
     font-size: 1.8rem;
     font-weight: 600;
-}
-
-h6{
-  font-size: 1.4rem;
-  font-weight: 400;
 }
 
 :root {
@@ -145,15 +145,18 @@ h6{
   display: block;
 }
 
-.point-ttl h3{
+.point-ttl .point-number{
   position: relative;
   display: inline-block;
   color: var(--main-color);
   z-index: 1;
   line-height: 1;
+  background-color: transparent;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.point-ttl h3::before {
+.point-ttl .point-number::before {
   content: "";
   position: absolute;
   left: 0;
@@ -165,14 +168,22 @@ h6{
   z-index: -1;
 }
 
-.point-ttl p{
+.point-ttl .hoken-detail{
   color: var(--white-color);
   background-color: var(--main-color);
   font-weight: 600;
   display: inline-block;
-  padding: 0.5rem 2rem;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  padding-left: 16px;
+  padding-right: 16px;
   border-radius: 4px;
   margin: 2rem 0;
+  font-size: 1.6rem;
+}
+
+.point-ttl .large-detail{
+  display: block;
 }
 
 .point-ttl h2{
@@ -181,8 +192,10 @@ h6{
   margin-bottom: 4.8rem;
 }
 
-.point-ttl h4{
-  padding-bottom: 4.8rem;
+.point-ttl .send-265{
+  padding-bottom: 3.2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 
 .e-font{
@@ -200,13 +213,15 @@ h6{
 .common-link .title{
   color: var(--white-color);
   font-weight: 600;
+  font-size: 2rem;
 }
 
 .common-link .custom-button {
   width: 326px;
   margin: 3.2rem auto;
-  padding: 20px 0;
-  font-size: 2rem;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  font-size: 1.8rem;
   font-weight: 600;
   border-radius: 33px;
   cursor: pointer;
@@ -250,11 +265,11 @@ h6{
 .area-1{
   width: 100%;
   height: 460px;
-  background-image: url(img/keyvisual_pc.jpg);
+  background-image: url(../img/keyvisual_pc.jpg);
   background-position: left bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 6rem 0 0 4rem;
+  padding: 4.8rem 0 0 4rem;
   position: relative;
 }
 
@@ -278,7 +293,7 @@ h6{
   display: flex;
   gap: 0.8rem;
   position: absolute;
-  bottom: 3rem;
+  bottom: 2.8rem;
   right: 3rem;
 }
 
@@ -291,7 +306,10 @@ h6{
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 0.8rem;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
   border-radius: 4px;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.1);
 }
@@ -320,13 +338,14 @@ h6{
 @media (max-width: 768px) {
   .area-1{
     height: 600px;
-    background-image: url(img/keyvisual_sp.jpg);
-    padding: 6rem 0 0 0;
+    background-image: url(../img/keyvisual_sp.jpg);
+    padding: 4.8rem 0 0 0;
   }
 
   .area-1 .point .box {
     width: 100%;
     font-size: 1.4rem;
+    padding: 0.4rem;
   }
 
   .area-1 .point {
@@ -334,6 +353,7 @@ h6{
     left: 0;
     margin: 0 auto;
     width: 90%;
+    bottom: 2.4rem;
   }
 
   .area-1 .icon {
@@ -392,11 +412,13 @@ h6{
   color: var(--white-color);
   border-radius: 4px;
   display: inline-block;
-  padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1.8rem;
+  padding: 0.3rem 0.5rem 0 0.5rem;
 }
 
 .area-2 .right .box p:nth-child(2){
-  padding: 1rem 0;
+  padding-top: 4px;
+  padding-bottom: 8px;
 }
 
 .area-2 .note-container {
@@ -443,6 +465,18 @@ h6{
     width: 90%;
     margin: 0 auto;
   }
+
+  .area-2 {
+    padding: 4.8rem 0;
+}
+
+  .area-2 .right .box {
+    font-size: 1.4rem;
+  }
+
+  .area-2 .right .box span {
+    font-size: 1.6rem;
+  }
 }
 
 /* area 3 */
@@ -466,9 +500,9 @@ h6{
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 7px;
   width: 100%;
-  height: 12px;
+  height: 10px;
   background-color: var(--cv-color);
   z-index: -1;
 }
@@ -476,7 +510,7 @@ h6{
 .area-3 .point-link {
   width: 100%;
   max-width: 1100px;
-  margin: 6rem auto 0;
+  margin: 6.4rem auto 0;
   display: flex;
   justify-content: center;
   gap: 1.6rem;
@@ -491,31 +525,33 @@ h6{
   cursor: pointer;
 }
 
-.area-3 .point-link .box h5{
+.area-3 .point-link .box p{
   position: relative;
   display: inline-block;
   color: var(--main-color);
   z-index: 1;
   line-height: 1.5;
   padding: 2rem 0 0 0;
+  font-weight: 600;
 }
 
-.area-3 .point-link .box h5::before{
+.area-3 .point-link .box p::before{
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 3px;
   width: 100%;
-  height: 11px;
+  height: 8px;
   background-color: var(--cv-color);
   opacity: 1;
   z-index: -1;
 }
 
-.area-3 .point-link .box h4{
+.area-3 .point-link .box h3{
   padding: 2rem 0;
   color: #222;
-  padding: 2rem 0 6rem;
+  padding: 1rem 0 7rem;
+  font-size: 2rem;
 }
 
 .area-3 .point-link .anchor {
@@ -523,12 +559,13 @@ h6{
   color: var(--white-color);
   background-color: var(--main-color);
   border-radius: 0 0 8px 8px;
-  padding: 0.7rem 0 1rem;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding-top: 15px;
+  padding-bottom: 12px;
 }
 
 .area-3 .arrow-round {
@@ -563,6 +600,7 @@ h6{
 @media (max-width: 770px) {
   .area-3 .point-link {
     flex-wrap: wrap;
+    margin: 4.8rem auto 0;
   }
 
   .area-3 .point-link .box {
@@ -594,11 +632,11 @@ h6{
   width: 100%;
   text-align: center;
   background-color: var(--bg-color-2);
-  padding: 7rem 2.5%;
+  padding: 6.4rem 2.5%;
 }
 
 .area-4 .merit{
-  margin-bottom: 4rem;
+  margin-bottom: 3.2rem;
 }
 
 .area-4 .merit p{
@@ -635,11 +673,30 @@ h6{
   font-weight: 600;
 }
 
+.area-4 .text .mark{
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.area-4 .text .mark::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+  opacity: 0.8;
+  z-index: -1;
+  background-color: var(--cv-color);
+}
+
 .area-4 .custom-button {
   width: 300px;
   margin: 3.2rem auto 0;
-  padding: 20px 0;
-  font-size: 2rem;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
   font-weight: 600;
   border-radius: 33px;
   cursor: pointer;
@@ -647,8 +704,8 @@ h6{
   text-align: center;
   text-decoration: none;
   transition: 0.2s;
-  color: var(--main-color);
-  border: 1px solid var(--main-color);
+  color: #222;
+  border: 2px solid var(--main-color);
   display: block;
 }
 
@@ -660,7 +717,7 @@ h6{
 .plan-conteiner{
   max-width: 780px;
   width: 100%;
-  margin: 0 auto 6rem
+  margin: 0 auto 4.8rem;
 }
 
 .grid {
@@ -711,8 +768,9 @@ h6{
   padding-bottom: 1rem;
 }
 
-.type .green .right h5{
+.type .green .right h4{
   text-align: left;
+  font-size: 1.8rem;
 }
 
 .type .green .right p{
@@ -723,18 +781,20 @@ h6{
   font-weight: 400;
   line-height: 1.75;
   margin: 1rem 0;
+  padding-top: 2px;
 }
 
-.type .green .right h6{
+.price-point{
   color: var(--main-color);
   font-weight: 600;
 }
 
 .type .green .right .price-15{
   padding-top: 0.8rem;
+  display: block;
 }
 
-.type .green .right h6 span{
+.price-point span{
   font-size: 1.2rem;
   color: #222;
   font-weight: 400;
@@ -759,9 +819,10 @@ h6{
 .item {
   background-color: var(--bg-color);
   color: var(--main-color);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  padding-top: 15px;
+  padding-bottom: 12px;
   font-weight: 600;
-  padding: 20px;
   text-align: center;
   cursor: pointer;
   border-radius: 0 0 8px 8px;
@@ -904,8 +965,9 @@ h6{
   padding-bottom: 1rem;
 }
 
-.popup-text .green .right h5{
+.popup-text .green .right h4{
   text-align: left;
+  font-size: 1.8rem;
 }
 
 .popup-text .green .right p{
@@ -916,6 +978,7 @@ h6{
   font-weight: 400;
   line-height: 1.75;
   margin: 1rem 0;
+  padding-top: 2px;
 }
 
 .popup-text .green .right h6{
@@ -932,12 +995,13 @@ h6{
 
 .popup-text .gray{
   width: 95%;
-  margin: 0 auto 2rem;
+  margin: 2rem auto 0;
   background-color: var(--bg-color-3);
   border-radius: 8px;
   line-height: 1.5;
   padding: 1.6rem;
   text-align: left;
+  font-size: 1.4rem;
 }
 
 .popup-text .gray span{
@@ -1017,7 +1081,7 @@ h6{
   display: flex;
   color: var(--gray-color-4);
   width: 95%;
-  margin: 0 auto 1rem;
+  margin: 1rem auto 1rem;
   text-align: left;
 }
 
@@ -1071,6 +1135,7 @@ h6{
 
   .common-link .link {
     flex-direction: column;
+    gap: 1.4rem;
   }
 
   .popup-content {
@@ -1119,13 +1184,14 @@ h6{
   }
 
   .area-4 .accordion_header-9{
-    font-size: 2rem;
+    font-size: 1.8rem;
     background-color: var(--main-color);
     color: var(--white-color);
     font-weight: 600;
     margin: 0 auto;
     border-radius: 33px;
-    padding: 20px 0;
+    padding-top: 15px;
+	padding-bottom: 12px;
   }
 
   .area-4 .accordion-wrapper{
@@ -1175,9 +1241,11 @@ h6{
 
 .area-5 .green {
   color: var(--white-color);
+  font-size: 1.8rem;
   font-weight: 600;
   background-color: #80B2AC;
-  padding: 1.6rem 0;
+  padding-top: 15px;
+  padding-bottom: 12px;
   border-radius: 5px 5px 0 0;
 }
 
@@ -1190,6 +1258,7 @@ h6{
 
 .area-5 .a-txt{
   padding: 2rem 0;
+  font-size: 1.4rem;
 }
 
 .area-5 .a-txt.pop-margin{
@@ -1214,6 +1283,7 @@ h6{
 .area-5 .b-txt{
   padding-bottom: 2rem;
   font-weight: 600;
+  font-size: 2rem;
 }
 
 .area-5 .b-txt .large{
@@ -1222,8 +1292,12 @@ h6{
 }
 
 .area-5 .b-txt .middle{
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: var(--main-color);
+}
+
+.area-5 .b-txt .middle.black{
+  color: #222;
 }
 
 .area-5 .c-txt {
@@ -1232,22 +1306,95 @@ h6{
   font-size: 1.2rem;
   font-weight: 400;
   color: var(--white-color);
-  padding: 0.4rem;
+  padding: 0.4rem 0 0.4rem 1rem;
   border-radius: 17px;
   margin: 0 auto 0.8rem;
   width: 90%;
   border: 2px solid var(--main-color);
+  text-align: left;
+  position: relative;
 }
+
+.area-5 .c-txt .yes{
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  margin: auto 0;
+  right: 10px;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.area-5 .c-txt .yes .circle{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: solid 2px var(--white-color);
+  margin-right: 5px;
+}
+
+.area-5 .c-txt .no{
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  margin: auto 0;
+  right: 10px;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.area-5 .c-txt .no .cross{
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background: var(--white-color);
+  transform: rotate(45deg);
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.area-5 .c-txt .no .cross::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--white-color);
+  transform: rotate(90deg);
+}
+
+
+.area-5 .c-txt .yes::before {
+  content: '';
+  width: 1px;
+  height: 35px;
+  background-color: var(--white-color);
+  position: absolute;
+  left: -6px;
+  top: -3px;
+}
+
+.area-5 .c-txt .no::before {
+  content: '';
+  width: 1px;
+  height: 35px;
+  background-color: var(--white-color);
+  position: absolute;
+  left: -6px;
+  top: -3px;
+}
+
 
 .area-5 .c-txt span{
   font-size: 1.4rem;
   font-weight: bold;
-}
-
-.area-5 .c-txt.wh{
-  background-color: transparent!important;
-  color: #4E948B!important;
-  border: 2px solid #4E948B;
 }
 
 .area-5 .down span{
@@ -1269,7 +1416,7 @@ h6{
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 2px;
   width: 100%;
   height: 8px;
   background-color: var(--cv-color);
@@ -1283,6 +1430,7 @@ h6{
   width: 95%;
   margin: 0 auto;
   border-bottom: dashed 1.5px #B2D1CD;
+  font-size: 1.6rem;
 }
 
 .area-5 .e-txt.second{
@@ -1308,8 +1456,12 @@ h6{
 }
 
 .area-5 .e-txt .middle{
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: var(--main-color);
+}
+
+.area-5 .e-txt .middle.black{
+  color: #222;
 }
 
 .area-5 .green.second{
@@ -1352,7 +1504,7 @@ h6{
 
 .area-5 .second-item {
   background-color: var(--white-color);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
   padding: 20px;
   text-align: center;
@@ -1361,12 +1513,13 @@ h6{
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 54px;
+  line-height: 54px;
 }
 
 .area-5 .second-item span{
-  width: 22px;
-  height: 22px;
   margin-left: 10px;
+  margin-bottom: 34px;
 }
 
 .area-5 .second-item span img{
@@ -1423,12 +1576,17 @@ h6{
 
 .area-5 .price-container .flex .txt p{
   font-weight: 600;
-  padding-bottom: 1rem;
+}
+
+.area-5 .price-container .flex .txt .price-reason{
+  font-size: 1.4rem;
+  color: #222;
 }
 
 .area-5 .price-container .flex .txt span{
   font-size: 1.2rem;
   color: var(--gray-color-4);
+  display: block;
 }
 
 .area-5 .price-container .flex .price{
@@ -1443,7 +1601,7 @@ h6{
   border-radius: 4px;
 }
 
-.area-5 .price-container .flex .price h6{
+.area-5 .price-container .flex .price p{
   font-weight: 600;
 }
 
@@ -1537,24 +1695,25 @@ h6{
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin: 4rem auto 3rem;
+  margin: 4.8rem auto 3.2rem;
   width: 100%;
   max-width: 700px;
 }
 
 .area-5 .container .custom-button {
   flex: 1;
-  padding: 20px 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   border-radius: 33px;
+  padding-top: 13px;
+  padding-bottom: 10px;
   cursor: pointer;
   border: none;
   text-align: center;
   text-decoration: none;
   transition: 0.2s;
-  color: var(--main-color);
-  border: 1px solid var(--main-color);
+  color: #222;
+  border: 2px solid var(--main-color);
   display: block;
 }
 
@@ -1738,18 +1897,27 @@ h6{
 }
 
 .area-5 .note-container .text {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--gray-color-4);
   font-weight: 400;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
   .area-5 .second-grid {
     flex-wrap: wrap;
+  }
+
+  .area-5 .second-type.third {
+    flex: 0 0 100%;
+    order: 2;
+}
+}
+
+@media (max-width: 770px) {
+  .area-5 .second-grid {
     width: 95%;
     margin: 0 auto;
   }
-
   .area-5 .second-type {
     flex: 1 1 calc(50% - 10px);
   }
@@ -1785,7 +1953,7 @@ h6{
 
 .area-5 .green.pop-fix {
   width: 82%;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
 }
 
 .area-5 .second-popup .second-next {
@@ -1804,6 +1972,7 @@ h6{
 
 .area-5 .price-container .flex .txt {
   padding-bottom: 1rem;
+  width: 100%;
 }
 
 .area-5 .price-container .flex .price .none{
@@ -1841,6 +2010,10 @@ h6{
   .area-5 .plan-pop-fix{
     width: 90%;
   }
+
+  .area-5 {
+    margin: 4.8rem auto;
+  }
 }
 
 /* area-6 */
@@ -1871,12 +2044,27 @@ h6{
   border-radius: 8px;
 }
 
+.area-6 .application .font-2,
+.area-7 .application .font-2{
+  font-size: 2rem;
+}
+
+.area-7 .application .font-1{
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+.area-7 .application .font-1 {
+  margin-bottom: 380px;
+}
+}
+
 .area-6 .application .container,
 .area-7 .application .container{
   display: flex;
   gap: 1.6rem;
   width: 100%;
-  margin: 4rem auto;
+  margin: 3.2rem auto;
 }
 
 .area-6 .application .container .box,
@@ -1884,14 +2072,14 @@ h6{
   flex: 1;
   background-color: var(--bg-color);
   color: var(--main-color);
-  padding: 1.6rem;
+  padding: 2.4rem 1.6rem;
   font-weight: 600;
   border-radius: 8px;
 }
 
 .area-6 .application .container .box p,
 .area-7 .application .container .box p{
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .area-6 .application .container .box p:nth-child(2),
@@ -1908,8 +2096,9 @@ h6{
 .area-6 .application .custom-button{
   width: 326px;
   margin: 4rem auto 0;
-  padding: 20px 0;
-  font-size: 2rem;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  font-size: 1.8rem;
   font-weight: 600;
   border-radius: 33px;
   cursor: pointer;
@@ -1930,7 +2119,8 @@ h6{
 .area-7 .application .link{
   color: var(--main-color);
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 3.2rem;
+  font-size: 1.4rem;
 }
 
 .area-6 .application .link a,
@@ -1939,24 +2129,25 @@ h6{
   color: var(--main-color);
 }
 
-.area-7 h4{
-  padding-top: 2rem;
+.area-7 .green-txt{
+  padding-top: 0.8rem;
   color: var(--main-color);
+  font-size: 2rem;
 }
 
 .area-7 .button-with-image {
   width: 326px;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
-  color: var(--main-color);
+  padding-top: 13px;
+  padding-bottom: 10px;
+  color: #222;
   border: none;
   border-radius: 33px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   cursor: pointer;
-  border: 1px solid var(--main-color);
+  border: 2px solid var(--main-color);
   margin: 0 auto;
   transition: 0.2s;
 }
@@ -1967,7 +2158,7 @@ h6{
 
 .area-7 .button-with-image img {
   margin-left: 10px;
-  margin-top: 0.1rem;
+  margin-bottom: 3px;
   width: 24px;
   height: 24px;
 }
@@ -2054,18 +2245,25 @@ h6{
   max-width: 780px;
 }
 
-.area-8 h6{
+.area-8 .price-down{
   text-align: center;
   padding-top: 4.8rem;
+  font-size: 1.4rem;
+}
+
+.area-8 .point-ttl .ttl-margin {
+  margin-bottom: 2.4rem;
 }
 
 .area-8 .note{
   color: var(--gray-color-4);
   text-align: left;
+  padding-top: 2.4rem;
+  font-size: 1.2rem;
 }
 
 .area-8 .graph{
-  margin: 0 auto 4rem;
+  margin: 0 auto 2.4rem;
   background-color: var(--bg-color);
   border: 2px solid var(--main-color);
   display: flex;
@@ -2081,9 +2279,11 @@ h6{
   align-items: baseline;
   gap: 2px;
   flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.area-8 .graph h4{
+.area-8 .graph p{
   display: flex;
   align-items: baseline;
 }
@@ -2125,9 +2325,14 @@ h6{
   padding: 2.4rem 1.6rem;
 }
 
-.area-8 .repeat .box h4{
+.area-8 .repeat .box .repeat-detail{
   color: var(--main-color);
   padding-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.area-8 .repeat .box .font-2{
+  font-size: 2rem;
 }
 
 .area-8 .repeat .box p{
@@ -2143,9 +2348,9 @@ h6{
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 2px;
   width: 100%;
-  height: 6px;
+  height: 8px;
   background-color: var(--cv-color);
   opacity: 1;
   z-index: -1;
@@ -2172,11 +2377,14 @@ h6{
   height: 94px;
 }
 
-.area-8 .repeat .box .bg .price .img h5{
+.area-8 .repeat .box .bg .price .img p{
   padding-top: 0.5rem;
+  margin: 0;
+  position: static;
+  color: #222;
 }
 
-.area-8 .repeat .box .bg .price .img h5 span{
+.area-8 .repeat .box .bg .price .img p span{
   font-size: 1rem;
 }
 
@@ -2193,43 +2401,49 @@ h6{
   font-weight: 600;
 }
 
-.area-8 .repeat .box .bg .txt h6{
+.area-8 .repeat .box .bg .txt .future{
   color: var(--main-color);
   font-weight: 600;
   padding-bottom: 1rem;
   padding-top: 0;
+  display: block;
+  font-size: 1.4rem;
 }
 
 .area-8 .repeat .box .bg h6{
   padding-top: 0;
 }
 
-.area-8 .repeat .box .bg .txt h4{
+.area-8 .repeat .box .bg .txt .mileage{
   padding-bottom: 1rem;
+  font-size: 2rem;
+  position: static;
+  margin: 0;
 }
 
 .area-8 .repeat .box .bg .txt .small{
-  font-size: 1.6rem;
-  padding: 0.5rem 0.5rem 0 0;
+  font-size: 2rem;
+  padding: 1.8rem 0.5rem 0 0;
 }
 
 .area-8 .repeat .box .bg .txt .middle{
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 
 .area-8 .repeat .box .bg .txt .large{
-  font-size: 5rem;
+  font-size: 4.8rem;
 }
 
 .area-8 .repeat .box .bg.margin{
-  margin-top: 3rem;
+  margin-top: 4.8rem;
 }
 
 .area-8 .custom-button {
   width: 95%;
   margin: 2rem auto 0;
-  padding: 20px 0;
-  font-size: 2rem;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
   font-weight: 600;
   border-radius: 33px;
   cursor: pointer;
@@ -2237,8 +2451,8 @@ h6{
   text-align: center;
   text-decoration: none;
   transition: 0.2s;
-  color: var(--main-color);
-  border: 1px solid var(--main-color);
+  color: #222;
+  border: 2px solid var(--main-color);
   display: block;
   transition: 0.2s;
 }
@@ -2263,7 +2477,7 @@ h6{
     font-size: 1.8rem;
 }
 
-  .area-8 h6 {
+  .area-8 .price-down {
     text-align: center;
     padding-top: 3.2rem;
   }
@@ -2306,12 +2520,14 @@ h6{
   margin: 6.4rem auto;
 }
 
-.area-9 h3{
+.area-9 h2{
   text-align: center;
+  font-size: 2.4rem;
+
 }
 
 .area-9 .container{
-  margin: 4rem auto;
+  margin: 4.8rem auto;
   display: flex;
   gap: 1.6rem;
 }
@@ -2323,14 +2539,15 @@ h6{
   border-radius: 8px;
 }
 
-.area-9 .container .box p{
+.area-9 .container .box h3{
   position: relative;
   padding-left: 1.5rem;
   font-weight: 600;
   margin-bottom: 2rem;
+  font-size: 1.6rem;
 }
 
-.area-9 .container .box p::before{
+.area-9 .container .box h3::before{
   content: '';
   width: 6px;
   height: 100%;
@@ -2402,6 +2619,10 @@ h6{
   .area-9 .container .box .img {
     width: 100%;
   }
+
+  .area-9 {
+    margin: 4.8rem auto;
+}
 }
 
 /* area 10 */
@@ -2411,22 +2632,23 @@ h6{
   padding: 6.4rem 0;
 }
 
-.area-10 h3{
+.area-10 h2{
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .area-10 .accordion_one {
   max-width: 780px;
   width: 100%;
-  margin: 0 auto 2rem;
+  margin: 0 auto 3.2rem;
 }
 
 .area-10 .accordion_one .accordion_header {
   background-color: var(--white-color);
   font-size: 1.4rem;
   font-weight: 600;
-  padding: 2rem 6rem 2rem 2rem;
+  padding: 2rem 6rem 1.9rem 2rem;
   border-radius: 8px;
   position: relative;
   z-index: +1;
@@ -2494,7 +2716,7 @@ h6{
 
 .area-10 .accordion_one .accordion_inner {
   display: none;
-  padding: 2rem 0 0;
+  padding: 3.2rem 0 0;
   box-sizing: border-box;
 }
 
@@ -2505,9 +2727,10 @@ h6{
 
 .area-10 .custom-button {
   width: 335px;
-  margin: 4rem auto 0;
-  padding: 2rem 0;
-  font-size: 2rem;
+  margin: 4.8rem auto 0;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
   font-weight: 600;
   border-radius: 33px;
   background-color: var(--white-color);
@@ -2516,8 +2739,8 @@ h6{
   text-align: center;
   text-decoration: none;
   transition: 0.2s;
-  color: var(--main-color);
-  border: 1px solid var(--main-color);
+  color: #222;
+  border: 2px solid var(--main-color);
   display: block;
 }
 
@@ -2539,6 +2762,10 @@ h6{
   .area-10 .accordion_one .accordion_header .i_box {
     right: 4%;
   }
+
+  .area-10 {
+    padding: 4.8rem 0;
+}
 }
 
 /* area 11 */
@@ -2548,10 +2775,19 @@ h6{
   padding: 6.4rem 2.5%;
 }
 
-.area-11 h3 {
+.area-11 h2 {
   text-align: center;
   color: var(--white-color);
   margin-bottom: 4rem;
+  font-size: 2.4rem;
+}
+
+.area-11 .call-txt {
+  text-align: center;
+  color: var(--white-color);
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 
 .area-11 .call{
@@ -2600,14 +2836,14 @@ h6{
   margin: 1rem 0;
 }
 
-.area-11 .call .right h6{
+.area-11 .call .right .time{
   font-weight: 600;
   display: inline-flex;
   align-items: center;
   margin-bottom: 0.5rem;
 }
 
-.area-11 .call .right h6 .small{
+.area-11 .call .right .time .small{
   font-size: 1.2rem;
   background-color: var(--bg-color);
   border-radius: 15px;
@@ -2615,14 +2851,14 @@ h6{
   margin: 0 0.5rem;
 }
 
-.area-11 .call .right h6 .large{
+.area-11 .call .right .time .large{
   font-size: 2.4rem;
 }
 
 .area-11 .btn-container{
   width: 100%;
   max-width: 780px;
-  margin: 4rem auto 0;
+  margin: 4.8rem auto 0;
 }
 
 .area-11 .btn-container .link{
@@ -2634,10 +2870,11 @@ h6{
 .area-11 .btn-container .link .box{
   flex: 1;
   background-color: var(--white-color);
-  color: var(--main-color);
-  font-size: 2rem;
+  color: #222;
+  font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem;
+  padding-top: 15px;
+  padding-bottom: 12px;
   text-align: center;
   border-radius: 33px;
   transition: 0.2s;
@@ -2674,13 +2911,19 @@ h6{
 .area-13{
   width: 100%;
   max-width: 780px;
-  margin: 7rem auto;
+  margin: 6.4rem auto;
   text-align: center;
 }
 
-.area-13 h4{
+.area-13 h2{
+  font-size: 2.4rem;
+}
+
+.area-13 p{
   color: var(--main-color);
-  margin: 2rem 0 6rem;
+  margin: 2rem 0 4.8rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .area-13 .img{
@@ -2693,9 +2936,9 @@ h6{
   background-color: var(--main-color);
   color: var(--white-color);
   text-align: left;
-  padding: 0.8rem;
+  padding: 0.6rem 0.6rem 0.4rem 0.6rem;
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 auto 2.4rem;
 }
 
@@ -2708,15 +2951,16 @@ h6{
 }
 
 .area-13 .btn-2-container .box{
-  border: 1px solid var(--main-color);
-  color: var(--main-color);
-  font-weight: 500;
-  font-size: 2rem;
+  border: 2px solid var(--main-color);
+  color: #222;
+  font-weight: 600;
+  font-size: 1.8rem;
   text-align: center;
-  padding: 1.2rem 0;
+  padding: 0.8rem 0;
   flex: 1;
   border-radius: 33px;
   transition: 0.2s;
+  height: 65px;
 }
 
 .area-13 .btn-2-container .box:hover{
@@ -2733,10 +2977,12 @@ h6{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   white-space: nowrap;
   width: auto;
-  padding: 2rem;
+  padding: 0 2rem;
+  height: 54px;
+  line-height: 54px;
 }
 
 .area-13 .btn-2-container .box span{
@@ -2837,10 +3083,8 @@ footer{
  border-radius: 50%;
  border: 2px solid #DCDCDC !important;
  color: #222;
- font-weight: 700;
  cursor: pointer;
- /* padding-left: 2px;
- padding-bottom: 2px; */
+ padding-top: 1px;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -2871,11 +3115,9 @@ footer{
  border-radius: 50%;
  border: 2px solid #DCDCDC !important;
  color: #222;
- font-weight: 700;
  cursor: pointer;
  z-index: 999;
- /* padding-left: 2px;
- padding-bottom: 2px; */
+ padding-top: 1px;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -2892,11 +3134,9 @@ footer{
  border-radius: 50%;
  border: 2px solid #DCDCDC !important;
  color: #222;
- font-weight: 700;
  cursor: pointer;
  z-index: 999;
- /* padding-left: 2px;
- padding-bottom: 2px; */
+ padding-top: 1px;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -2913,11 +3153,9 @@ footer{
  border-radius: 50%;
  border: 2px solid #DCDCDC !important;
  color: #222;
- font-weight: 700;
  cursor: pointer;
  z-index: 999;
- /* padding-left: 2px;
- padding-bottom: 2px; */
+ padding-top: 1px;
  display: flex;
  justify-content: center;
  align-items: center;
