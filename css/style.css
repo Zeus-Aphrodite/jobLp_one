@@ -491,12 +491,12 @@ h5{
   margin-bottom: 1rem;
 }
 
-.area-3 h2{
+.area-3 .title h2 span {
   position: relative;
   display: inline-block;
 }
 
-.area-3 h2::before {
+.area-3 .title h2 span::before {
   content: "";
   position: absolute;
   left: 0;
@@ -2130,7 +2130,6 @@ h5{
 }
 
 .area-7 .green-txt{
-  padding-top: 0.8rem;
   color: var(--main-color);
   font-size: 2rem;
 }
@@ -2333,6 +2332,9 @@ h5{
 
 .area-8 .repeat .box .font-2{
   font-size: 2rem;
+  color: #222;
+  margin-top: 1.5rem;
+  display: block;
 }
 
 .area-8 .repeat .box p{
