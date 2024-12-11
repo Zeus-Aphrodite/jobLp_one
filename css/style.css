@@ -3167,6 +3167,34 @@ footer{
     width: 90%;
   } 
   .new_close_new{
+    right: -15px;
+  }
+  .new_close_three{
+    right: -15px;
+  }
+  .new_close_two{
+    right: -10px;
+  }
+}
+@media (max-width: 600px) {
+  .plan-pop-fix-new{
+    width: 90%;
+  } 
+  .new_close_new{
+    right: -5px;
+  }
+  .new_close_three{
+    right: -15px;
+  }
+  .new_close_two{
+    right: -10px;
+  }
+}
+@media (max-width: 425px) {
+  .plan-pop-fix-new{
+    width: 90%;
+  } 
+  .new_close_new{
     right: 20px;
   }
   .new_close_three{
