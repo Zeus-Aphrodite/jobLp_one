@@ -62,7 +62,6 @@ a{
 img{
   width: 100%;
   vertical-align: bottom;
-  padding-top: 2rem;
 }
 
 h1{
@@ -920,7 +919,7 @@ h5{
 .popup-content {
   background-color: var(--white-color);
   position: relative;
-  width: 97%;
+  width: 100%;
   max-width: 500px;
   text-align: center;
   border-radius: 8px;
@@ -964,13 +963,11 @@ h5{
   text-align: left;
   font-weight: 600;
   padding-bottom: 1rem;
-  padding-top: 2rem;
 }
 
 .popup-text .green .right h4{
   text-align: left;
   font-size: 1.8rem;
-  padding-top: 2rem;
 }
 
 .popup-text .green .right p{
@@ -1144,8 +1141,7 @@ h5{
   .popup-content {
     background-color: var(--white-color);
     position: relative;
-    width: 90%;
-    margin: auto;
+    width: 80%;
   }
 
   .popup .next {
@@ -1566,7 +1562,7 @@ h5{
   justify-content: space-between;
   border-bottom: 1px solid #B2D1CD;
   padding-bottom: 1rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   align-items: flex-end;
 }
 
@@ -1748,8 +1744,12 @@ h5{
   width: 100%;
 }
 
+.area-5 .two-pop{
+  padding-top: 9rem;
+}
+
 .area-5 .pop-ttl-fix-pd{
-  padding-top: 14rem;
+  padding-top: 15rem;
 }
 
 .area-5 .plan-pop-fix{
@@ -1760,14 +1760,7 @@ h5{
   z-index: 11;
   border-radius: 8px 8px 0 0;
 }
-.area-5 .plan-pop-fix-three{
-  position: fixed;
-  width: 100%;
-  max-width: 500px;
-  background-color: var(--white-color);
-  z-index: 11;
-  border-radius: 8px 8px 0 0;
-}
+
 .area-5 .btn-pop-1,
 .area-5 .btn-pop-2{
   width: 95%;
@@ -2014,16 +2007,18 @@ h5{
   padding: 0 2.5%;
 }
 
+.area-5 .two-pop {
+  padding: 9rem 2.5% 0;
+}
+
   .sp-90 .second-popup-content {
     width: 90%; /* openPopup(3) または openPopup(4) の場合のみ適用 */
   }
 
   .area-5 .plan-pop-fix{
-    width: 83%;
-  }
-  .area-5 .plan-pop-fix-three{
     width: 90%;
   }
+
   .area-5 {
     margin: 4.8rem auto;
   }
@@ -2066,8 +2061,8 @@ h5{
   font-size: 1.8rem;
 }
 
-@media (max-width: 768px) {
-.area-7 .application .font-1 {
+@media (max-width: 475px) {
+.area-7 .application .font-2 {
   margin-bottom: 380px;
 }
 }
@@ -2098,6 +2093,13 @@ h5{
 .area-6 .application .container .box p:nth-child(2),
 .area-7 .application .container .box p:nth-child(2){
   color: #222;
+}
+
+.area-7 .note-small{
+  font-size: 1.2rem;
+  color: var(--gray-color-4);
+  font-weight: 400;
+  padding-top: 1.6rem;
 }
 
 .area-6 .application .container .box .img,
@@ -3088,7 +3090,7 @@ footer{
 
 .new_close{
   position: absolute;
-  top: -15px;
+  top: -35px;
   right: -15px;
   width: 30px;
   height: 30px;
@@ -3180,51 +3182,12 @@ footer{
     width: 90%;
   } 
   .new_close_new{
-    right: -15px;
+    right: 20px;
   }
   .new_close_three{
     right: -15px;
   }
   .new_close_two{
     right: -10px;
-  }
-}
-@media (max-width: 600px) {
-  .plan-pop-fix-new{
-    width: 90%;
-  } 
-  .new_close_new{
-    right: -5px;
-  }
-  .new_close_three{
-    right: -15px;
-  }
-  .new_close_two{
-    right: -10px;
-  }
-}
-@media (max-width: 425px) {
-  .plan-pop-fix-new{
-    width: 90%;
-  } 
-  .new_close_new{
-    right: -10px;
-  }
-  .new_close_three{
-    right: -15px;
-  }
-  .new_close_two{
-    right: -10px;
-  }
-}
-
-.new_pop{
-  overflow: hidden;
-}
-
-@media (max-width:768px) {
-  .new_pop{
-    width: 80%;
-    margin: auto;
   }
 }
