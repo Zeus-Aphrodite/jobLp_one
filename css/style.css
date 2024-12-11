@@ -919,7 +919,7 @@ h5{
 .popup-content {
   background-color: var(--white-color);
   position: relative;
-  width: 100%;
+  width: 97%;
   max-width: 500px;
   text-align: center;
   border-radius: 8px;
@@ -1141,7 +1141,8 @@ h5{
   .popup-content {
     background-color: var(--white-color);
     position: relative;
-    width: 80%;
+    width: 90%;
+    margin: auto;
   }
 
   .popup .next {
@@ -3084,7 +3085,7 @@ footer{
 
 .new_close{
   position: absolute;
-  top: -35px;
+  top: -15px;
   right: -15px;
   width: 30px;
   height: 30px;
@@ -3214,6 +3215,13 @@ footer{
   }
 }
 
-.plan-pop-fix-three{
-  
+.new_pop{
+  overflow: hidden;
+}
+
+@media (max-width:768px) {
+  .new_pop{
+    width: 80%;
+    margin: auto;
+  }
 }
