@@ -1756,7 +1756,14 @@ h5{
   z-index: 11;
   border-radius: 8px 8px 0 0;
 }
-
+.area-5 .plan-pop-fix-three{
+  position: fixed;
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--white-color);
+  z-index: 11;
+  border-radius: 8px 8px 0 0;
+}
 .area-5 .btn-pop-1,
 .area-5 .btn-pop-2{
   width: 95%;
@@ -2010,7 +2017,9 @@ h5{
   .area-5 .plan-pop-fix{
     width: 83%;
   }
-
+  .area-5 .plan-pop-fix-three{
+    width: 90%;
+  }
   .area-5 {
     margin: 4.8rem auto;
   }
@@ -3203,4 +3212,8 @@ footer{
   .new_close_two{
     right: -10px;
   }
+}
+
+.plan-pop-fix-three{
+  
 }
